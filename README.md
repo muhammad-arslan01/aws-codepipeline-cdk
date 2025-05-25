@@ -14,3 +14,29 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
 ## artifactBucket  
 It is the S3 bucket where intermediate files (source code, build outputs, etc.) are stored between pipeline stages. It ensures each stage gets the files it needs from the previous one.
+
+
+## 📦 CI/CD Pipeline with AWS CDK for Dockerized Lambda Deployment
+This project demonstrates a fully automated CI/CD pipeline built with AWS CDK (TypeScript) to deploy Dockerized AWS Lambda functions. It uses AWS CodePipeline, CodeBuild, ECR, and CodeCommit, all defined as infrastructure-as-code.
+
+🚀 Features:
+End-to-end CI/CD pipeline with AWS CDK
+
+Deploys Docker-based Lambda functions automatically
+
+Builds and pushes Docker images to Amazon ECR
+
+Automated deployments
+
+No manual AWS Console steps – everything is code-driven
+
+🛠️ AWS Services Used:
+AWS CodeCommit – Source repository
+
+AWS CodePipeline – CI/CD orchestration
+
+AWS CodeBuild – Docker image build & ECR push
+
+AWS Lambda – Deployed using Docker image from ECR
+
+AWS CDK (TypeScript) – Infrastructure provisioning
